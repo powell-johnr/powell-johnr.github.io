@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+
+/*
+ *
+ * GENERAL TYPOGRAPHY
+ *
+ */
+
+h1.title {
+  font-size: 2.8rem;
+}
+
+.title {
+  font-weight: 500;
+  font-style: normal;
+  text-align: center;
+}
+
+/*
+ *
+ * CARD
+ *
+ */
+
+.card-image img {
+  display: block;
+}
+
+.card-image {
+  margin-bottom: 16px;
+}
+
+.card {
+  margin: 32px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+/*
+ *
+ * IMAGE CAPTIONS
+ *
+ */
+
+.image-caption {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.image-title {
+  font-weight: 800;
+}
+
+.price {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 12px;
+  border: 1px solid #ddd;
+  padding: 0 6px 0 6px;
+  border-radius: 2px;
+  margin-top: 12px;
+}
+
+.is-available::before {
+  content: "";
+  display: inline-block;
+  background-color: green;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+.is-sold::before {
+  content: "";
+  display: inline-block;
+  background-color: red;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  margin-right: 4px;
+}
+
+/*
+ *
+ * NAV BAR
+ *
+ */
+
+.navbar {
+  background: none;
+}
+
+.navbar-brand img {
+  margin: 0 0 0 24px;
+}
+
+a.navbar-item:hover {
+  background: none;
+  text-decoration: underline;
+  color: #000;
+}
+
+div.navbar-item {
+  font-weight: 400;
+}
+
+div.navbar-item a.button {
+  font-size: 14px;
+}
+
+a.navbar-item {
+  font-weight: 400;
+}
+
+.navbar-burger {
+  border: none;
+  width: 4.75rem;
+  height: 4.75rem;
+  background: none !important;
+}
+
+.navbar-burger span {
+  height: 2px;
+  left: calc(50% - 11px);
+  width: 22px;
+}
+
+.navbar-menu.is-active .button {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navbar-menu.is-active .buttons {
+  margin-top: 3rem;
+}
+
+.navbar-menu.is-active .navbar-start {
+  margin-top: 2rem;
+}
+
+.navbar .button {
+  border: none;
+}
+
+/*
+ *
+ * QUOTES AND COPY
+ *
+ */
+
+.quote, .copy {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  padding: 32px 0 32px 0;
+}
+
+.quote {
+  text-align: center;
+}
+
+.copy p+p {
+  margin-top: 32px;
+}
+
+.quote-author {
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: .5em;
+  text-align: center;
+}
+
+.quote-mark {
+  display: inline-block;
+  float: left;
+  margin-top: .55em;
+  margin-right: .6em;
+  width: 0;
+  height: 0;
+  border-top: 1.45em solid #5bb0b3;
+  border-right: 1.45em solid transparent;
+}
+
+/*
+ *
+ * FANCY BOX MODAL MODIFIER
+ *
+ */
+
+.modal-close {
+  border-radius: 0;
+}
+
+.button {
+  background: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+      text-align: center;
+      font-size: 32px;
+      height: 36rem;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+  }
+  .navbar {
+    max-height: 75px;
+  }
+  h1.title {
+    font-size: 32px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .first-section {
+    padding: 10rem 1.5rem;
+  }
+  .navbar {
+      max-height: 75px;
+  }
+  .navbar-start {
+    margin-left: 2rem;
+  }
+  .navbar-end {
+      padding-right: 1.5rem;
+  }
+  a.navbar-item {
+    font-size: 14px;
+  }
+  h1.title {
+    padding-bottom: 3rem;
+  }
+}
+a.navbar-item.is-active {
+  font-weight: 600;
+  background: none;
+  color: #000;
+}
+h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.is-headerless {
+  border-top: 2px solid #ddd;
+}
+i {
+  color: #999;
+}
+.contact-buttons {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 769px), print {
+  .modal-card, .modal-content {
+      width: 850px;
+  }
+}
+
+/*
+ *
+ * NOTIFICATION BANNER
+ *
+ */
+
+.notification-container {
+  display: flex;
+  justify-content: center;
+}
+
+.notification {
+  border: 2px solid #ddd;
+  margin-bottom: 4rem;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 2rem;
+  display: flex;
+  background: none;
+  max-width: 900px;
+}
+
+@media screen and (max-width: 769px) {
+  .notification {
+      flex-wrap: wrap;
+  }
+
+  .notification img {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+}
+
+.notification img {
+  width: 320px;
+  height: auto;
+  margin-right: 2rem;
+}
+
+.notification p {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  color: #000;
+}
+
+.notification-cta {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.notification>.delete {
+  right: 8px;
+  top: 8px;
+}
+
+.notification-cta .button {
+  background-color: #000;
+  border: none;
+  color: #fff;
+}
