@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Manrope:wght@500;700&display=swap");
+
+body {
+  background: url("images/JP.jpg") no-repeat;
+  background-size: 282px 495px;
+  background-position: 384px 62px;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+h1 {
+  font-family: "Major Mono Display", monospace;
+  font-size: 150px;
+  line-height: 1;
+  color: #000;
+  font-weight: 100;
+  text-decoration: underline;
+  text-decoration-thickness: 8px;
+  position: absolute;
+  left: -40px;
+}
+
+.indent1,
+.indent2,
+.indent3 {
+  position: relative;
+}
+
+h1 .indent1 {
+  left: 162px;
+}
+
+h1 .indent2 {
+  left: 240px;
+}
+
+h1 .indent3 {
+  left: 1009px;
+}
+
+ul {
+  position: absolute;
+  right: 0px;
+  top: 630px;
+  list-style-type: none;
+}
+
+li {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: right;
+}
+
+li + li {
+  margin-top: 70px;
+}
+
+.email {
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  position: relative;
+  left: 85px;
+  top: 100px;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #000;
+}
+
+body::before {
+  display: block;
+  position: absolute;
+  left: 335px;
+  top: 481px;
+  background: url("images/barcode.png") no-repeat;
+  background-size: 100%;
+  width: 544px;
+  height: 317px;
+  content: " ";
+}
+
+body::after {
+  display: block;
+  position: absolute;
+  right: 38px;
+  top: 388px;
+  background: url("images/bg-line.png") no-repeat;
+  background-size: 100% 100%;
+  width: 1199px;
+  height: 800px;
+  content: " ";
+}
