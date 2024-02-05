@@ -123,6 +123,15 @@ ul.contact-info::before {
   color: #555555;
 }
 
+.title-block p {
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+}
+
+.title-block p a {
+  font-size: 1rem;
+}
+
 .name-and-title {
   background-image: url("images/jp.png");
   background-repeat: no-repeat;
