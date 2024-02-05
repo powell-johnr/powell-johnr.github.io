@@ -9,9 +9,13 @@
   font-optical-sizing: auto;
 }
 
+html {
+  font-size: 32px;
+}
+
 body {
   padding: 0.5rem 1.5rem 2rem 1.5rem;
-  font-size: 16px;
+  background-color: #f5f1ed;
 }
 
 /* Container styling */
@@ -45,6 +49,7 @@ h3 {
 
 p {
   line-height: 1.7rem;
+  font-size: 1rem;
 }
 
 p + p {
@@ -54,7 +59,7 @@ p + p {
 a {
   color: #000;
   padding: 0.75rem 1.5rem 0.75rem 1rem;
-  border: 1px solid #dedede;
+  border: 1px solid #000;
   text-decoration: none;
   border-radius: 6px;
   display: inline-block;
@@ -66,9 +71,11 @@ a:hover {
   color: #fff;
 }
 
-.material-symbols-outlined {
+.column img.icon-download {
   vertical-align: middle;
   margin-right: 0.3rem;
+  width: 1.4rem;
+  border: none;
 }
 
 ul.contact-info {
@@ -99,7 +106,7 @@ ul.contact-info::before {
 }
 
 .row.title-block {
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 
 .title-block .column {
@@ -120,13 +127,13 @@ ul.contact-info::before {
   background-image: url("images/jp.png");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  padding-left: 5.5rem;
+  padding-left: 6rem;
 }
 
 /* Base styles for the columns */
 .column {
-  margin: 10px 0; /* Margin top and bottom */
-  box-sizing: border-box; /* Include padding in the element's total width and height */
+  margin: 0 0 1.5rem 0;
+  box-sizing: border-box;
   flex-basis: 100%;
 }
 
@@ -150,7 +157,7 @@ img.headshot {
 }
 
 /* This applies when the screen width is 900px or more */
-@media screen and (min-width: 801px) {
+@media only screen and (min-width: 1000px) {
   .row {
     display: flex; /* Use Flexbox for the container */
     gap: 2rem; /* Space between columns */
@@ -164,9 +171,15 @@ img.headshot {
   body {
     padding: 0.5rem 4rem 2rem 4rem;
   }
+  html {
+    font-size: 16px;
+  }
+  .column {
+    margin: 0 0 2rem 0;
+  }
 }
 
-/* This applies when the screen width is 900px or more */
+/* This applies when the screen width is 1700px or more */
 @media screen and (min-width: 1700px) {
   .title-block .column {
     flex: 1;
