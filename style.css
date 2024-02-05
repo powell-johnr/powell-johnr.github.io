@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+/* Basic reset for padding and margin */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  padding: 0.5rem 1.5rem 2rem 1.5rem;
+  font-size: 16px;
+}
+
+/* Container styling */
+.container {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  max-width: 2000px;
+}
+
+/* Title styling */
+h1 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin-bottom: 0.75rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+ul.contact-info {
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin-bottom: 5rem;
+}
+
+li {
+  display: inline-block;
+}
+
+ul.contact-info::before {
+  display: inline-block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  background-color: #000;
+  margin-right: 6px;
+}
+
+.contact-info li {
+  margin-left: 2rem;
+}
+
+.row.caption {
+  margin-bottom: 7rem;
+}
+
+.row.title-block {
+  margin-bottom: 10rem;
+}
+
+.title-block .column {
+  flex: 1;
+}
+
+.title-block .column:first-child {
+  flex: 2;
+}
+
+.title-block h2 {
+  line-height: 1rem;
+  margin-bottom: 2rem;
+  color: #555555;
+}
+
+/* Base styles for the columns */
+.column {
+  margin: 10px 0; /* Margin top and bottom */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+  flex-basis: 100%;
+}
+
+.column img {
+  width: 100%;
+  height: auto;
+  border: 0.5px solid #dedede;
+  border-radius: 6px;
+}
+
+.placeholder {
+  display: none;
+}
+
+img.headshot {
+  float: left;
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  margin-right: 1rem;
+}
+
+/* This applies when the screen width is 900px or more */
+@media (min-width: 900px) {
+  .row {
+    display: flex; /* Use Flexbox for the container */
+    gap: 2rem; /* Space between columns */
+  }
+  .placeholder {
+    display: block;
+  }
+  .row.title-block {
+    margin-bottom: 10rem;
+  }
+  body {
+    padding: 0.5rem 4rem 2rem 4rem;
+  }
+}
+@media (min-width: 1700px) {
+  .title-block .column {
+    flex: 1;
+  }
+
+  .title-block .column:first-child {
+    flex: 1;
+  }
+}
+
+.error div {
+  margin: auto;
+}
+
+.error {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x {
+  box-shadow: 0 0 0 1em black, 0 1em 0 1em black, -2.5em 1.5em 0 0.5em black,
+    2.5em 1.5em 0 0.5em black, -3em -3em 0 0 black, 3em -3em 0 0 black,
+    -2em -2em 0 0 black, 2em -2em 0 0 black, -3em -1em 0 0 black,
+    -2em -1em 0 0 black, 2em -1em 0 0 black, 3em -1em 0 0 black,
+    -4em 0 0 0 black, -3em 0 0 0 black, 3em 0 0 0 black, 4em 0 0 0 black,
+    -5em 1em 0 0 black, -4em 1em 0 0 black, 4em 1em 0 0 black, 5em 1em 0 0 black,
+    -5em 2em 0 0 black, 5em 2em 0 0 black, -5em 3em 0 0 black,
+    -3em 3em 0 0 black, 3em 3em 0 0 black, 5em 3em 0 0 black, -2em 4em 0 0 black,
+    -1em 4em 0 0 black, 1em 4em 0 0 black, 2em 4em 0 0 black;
+  background: black;
+  width: 1em;
+  height: 1em;
+  overflow: hidden;
+  position: relative;
+  top: -6rem;
+}
