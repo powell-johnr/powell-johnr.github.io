@@ -61,7 +61,7 @@ a {
   padding: 0.75rem 1.5rem 0.75rem 1rem;
   border: 1px solid #000;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 10px;
   display: inline-block;
   transition: background-color 0.3s;
 }
@@ -76,6 +76,18 @@ a:hover {
   margin-right: 0.3rem;
   width: 1.4rem;
   border: none;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+  margin-right: 0.3rem;
+  position: relative;
+  top: -1px;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body .material-symbols-outlined {
+  font-size: 1.4rem;
 }
 
 ul.contact-info {
@@ -150,7 +162,7 @@ ul.contact-info::before {
   width: 100%;
   height: auto;
   border: 0.5px solid #dedede;
-  border-radius: 6px;
+  border-radius: 12px;
 }
 
 .placeholder {
@@ -185,6 +197,12 @@ img.headshot {
   }
   .column {
     margin: 0 0 2rem 0;
+  }
+  .column img {
+    border-radius: 6px;
+  }
+  a {
+    border-radius: 6px;
   }
 }
 
